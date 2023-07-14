@@ -1,5 +1,6 @@
 import "./styles.css";
 import Navbar from "./Components/Navbar.js";
+import DogTitle from "./Components/DogTitle.js";
 
 function onChangeView(view) {
   window.scrollTo(0, 0);
@@ -9,8 +10,12 @@ function onChangeView(view) {
 
 export default function App() {
   return (
-    <div className="App" style={{ margin: 0, padding: 0 }}>
-      <Navbar onChangeView={onChangeView} />
+    <div className="App">
+      <div>
+        <Navbar onChangeView={onChangeView} />
+      </div>
+      <DogTitle />
+      <div style={{ height: "1000px" }}></div>
     </div>
   );
 }

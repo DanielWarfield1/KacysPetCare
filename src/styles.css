@@ -1,4 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100&display=swap");
+
+*,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #e3e2ff;
+}
+
 .App {
-  font-family: sans-serif;
+  font-family: Josefin Slab;
   text-align: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+.Primary {
+  background-color: #edecff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.Secondary {
+  background-color: #ffffff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }

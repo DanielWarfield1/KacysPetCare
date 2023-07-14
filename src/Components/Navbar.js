@@ -6,8 +6,9 @@ export default function Navbar({ onChangeView }) {
       style={{
         display: "flex",
         justifyContent: "space-between",
-        position: "sticky",
-        top: 0,
+        position: "fixed",
+        top: "20px",
+        right: "20px",
         zIndex: 10000,
       }}
     >
@@ -16,8 +17,8 @@ export default function Navbar({ onChangeView }) {
         style={{
           display: "flex",
           alignItems: "center",
-          paddingRight: "10px",
-          paddingTop: "10px",
+          paddingRight: "0px",
+          paddingTop: "0px",
         }}
       >
         <Hamburger onChangeView={onChangeView} />
@@ -33,7 +34,7 @@ function Hamburger({ onChangeView }) {
         <input type="checkbox" />
       </label>
       <aside class="sidebar">
-        <div>
+        {/* <div>
           <div class="navElem" onClick={() => onChangeView("profileView")}>
             Profile
           </div>
@@ -43,7 +44,7 @@ function Hamburger({ onChangeView }) {
           <div class="navElem" onClick={() => onChangeView("resumeView")}>
             Resume
           </div>
-        </div>
+        </div> */}
       </aside>
     </>
   );
