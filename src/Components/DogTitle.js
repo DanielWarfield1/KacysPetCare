@@ -12,18 +12,29 @@ export default function DogTitle({ onChangeView }) {
         className="Primary"
         style={{
           position: "absolute",
-          height: "125px",
-          width: "100px",
-          top: "-25px",
+          height: "100px",
+          width: "80px",
+          top: "-20px",
           borderBottomRightRadius: "30px",
         }}
-      ></div>
+      />
+      {/* <div
+        className="Primary"
+        style={{
+          position: "absolute",
+          height: "100px",
+          width: "90px",
+          top: "-20px",
+          translate: "710px",
+          borderBottomLeftRadius: "30px",
+        }}
+      /> */}
       <div
         className="Secondary"
         style={{
           marginTop: "20px",
-          marginRight: "50px",
-          marginLeft: "50px",
+          marginRight: "25px",
+          marginLeft: "25px",
           height: "200px",
           borderRadius: "30px",
           display: "flex",

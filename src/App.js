@@ -1,21 +1,33 @@
 import "./styles.css";
+import HomePage from "./Pages/HomePage.js";
+import Services from "./Pages/Services.js";
 import Navbar from "./Components/Navbar.js";
-import DogTitle from "./Components/DogTitle.js";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 
 function onChangeView(view) {
   window.scrollTo(0, 0);
-  setCurrentView(view);
-  console.log("Changed View To Home");
+  console.log("Changed View");
 }
 
 export default function App() {
   return (
-    <div className="App">
-      <div>
-        <Navbar onChangeView={onChangeView} />
+    <Router>
+      <div className="AppContainer">
+        <div className="App">
+          <Navbar onChangeView={onChangeView} />
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
+          </Routes>
+          {/* <HomePage /> */}
+        </div>
       </div>
-      <DogTitle />
-      <div style={{ height: "1000px" }}></div>
-    </div>
+    </Router>
   );
 }
