@@ -8,6 +8,7 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
+import React from "react";
 
 function onChangeView(view) {
   window.scrollTo(0, 0);
@@ -25,7 +26,6 @@ export default function App() {
             <Route path="/services" element={<Services />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
-          {/* <HomePage /> */}
         </div>
       </div>
     </Router>

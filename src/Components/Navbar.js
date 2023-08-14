@@ -1,9 +1,11 @@
 import "./Navbar.css";
 
-import React, { useLayoutEffect, useState } from "react";
+import React, { useLayoutEffect, useState, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 
 function useWindowSize() {
   const [size, setSize] = useState([0, 0]);
+
   useLayoutEffect(() => {
     function updateSize() {
       setSize([window.innerWidth, window.innerHeight]);
@@ -49,24 +51,67 @@ export default function Navbar({ onChangeView }) {
   );
 }
 
-function Hamburger({ onChangeView }) {
+function Hamburger() {
+  const navigate = useNavigate();
+
+  //uncheck the css element controlling the side menu
+  function unCheck() {
+    var x = document.getElementsByClassName("checkbox");
+    var i;
+    for (i = 0; i < x.length; i++) {
+      x[i].checked = false;
+    }
+  }
+
+  const scrollDownHandler = () => {
+    setTimeout(() => {
+      window.scrollTo({
+        top: document.documentElement.scrollHeight,
+        behavior: "smooth",
+      });
+    }, 500);
+  };
+
   return (
     <>
       <label class="hamburger-menu">
-        <input type="checkbox" />
+        <input class="checkbox" type="checkbox" />
       </label>
       <aside class="sidebar">
-        {/* <div>
-          <div class="navElem" onClick={() => onChangeView("profileView")}>
-            Profile
-          </div>
-          <div class="navElem" onClick={() => onChangeView("hireView")}>
+        <div class="menu">
+          <h1
+            class="menuItem"
+            onClick={() => {
+              navigate("/home");
+              unCheck();
+            }}
+          >
+            Home
+          </h1>
+          <h1
+            class="menuItem"
+            onClick={() => {
+              navigate("/services");
+              unCheck();
+            }}
+          >
+            Prices and Services
+          </h1>
+          <h1
+            class="menuItem"
+            onClick={() => {
+              navigate("/");
+              unCheck();
+              scrollDownHandler();
+              // window.scrollTo({
+              //   top: document.documentElement.scrollHeight,
+              //   behavior: "smooth",
+              // });
+            }}
+          >
             Contact
-          </div>
-          <div class="navElem" onClick={() => onChangeView("resumeView")}>
-            Resume
-          </div>
-        </div> */}
+          </h1>
+        </div>
       </aside>
     </>
   );

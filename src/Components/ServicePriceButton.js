@@ -1,4 +1,8 @@
+import { useNavigate } from "react-router-dom";
+
 export default function ServicePriceButton() {
+  const navigate = useNavigate();
+
   return (
     <div style={{ position: "relative" }}>
       <svg
@@ -7,6 +11,10 @@ export default function ServicePriceButton() {
         viewBox="0 0 340 81"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        onClick={() => {
+          navigate("/services");
+        }}
+        style={{ cursor: "pointer" }}
       >
         <g filter="url(#filter0_di_7_10)">
           <rect

@@ -1,22 +1,27 @@
 import { useRef, useEffect, useState } from "react";
 
 export default function Card({ cardName, refCard, img, review }) {
+  console.log(review);
+
   return (
     <div className="bubble" ref={refCard}>
-      <div className="card m-2 pt-2">
-        <div className="py-1">
-          <div className="fs-5 mt-2">{cardName}</div>
-          <img
-            style={{
-              width: 100,
-              height: 100,
-              objectFit: "cover",
-              borderRadius: "10px",
-              margin: "5px",
-            }}
-            src={img}
-            alt="image"
-          />
+      <div className={review == null ? "card" : "card wide"}>
+        <div>
+          <div>{cardName}</div>
+          <div style={{ display: "flex" }}>
+            <img
+              style={{
+                width: 100,
+                height: 100,
+                objectFit: "cover",
+                borderRadius: "10px",
+                margin: "5px",
+              }}
+              src={img}
+              alt="image"
+            />
+            {review !== null && <div style={{ padding: "20px" }}>{review}</div>}
+          </div>
           <div style={{ fill: "gold" }}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
