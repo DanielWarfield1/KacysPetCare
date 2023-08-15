@@ -89,11 +89,13 @@
 }
 
 .hamburger-menu:has(input:checked) + .sidebar {
-  translate: -800px;
-  border-bottom-left-radius: 800px;
-  border-bottom-right-radius: 800px;
-  height: 3000px;
-  width: 900px;
+  /* translate: -800px; */
+  translate: calc(-100vw + 90px);
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  height: 2000px;
+  /* width: 900px; */
+  width: 100vw;
   background-color: #8c7cdc;
 }
 

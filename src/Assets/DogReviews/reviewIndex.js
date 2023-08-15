@@ -7,7 +7,7 @@ import img2897 from "./IMG-2897.jpeg";
 import img5208 from "./IMG-5208.jpeg";
 import img9683 from "./IMG-9683.jpeg";
 
-let reviews = [
+let all_reviews = [
   {
     img: img0945,
     name: "Avery",
@@ -27,4 +27,4 @@ let reviews = [
   { img: img9683, name: "Shadow", review: null },
 ];
 
-export { reviews };
+export { all_reviews };
