@@ -100,7 +100,7 @@ export default function DogTitle({ onChangeView }) {
             </defs>
           </svg>
         </div>
-        <p style={{ padding: "20px" }}>Pet Services</p>
+        <p style={{ padding: "20px" }}>Pet Care</p>
       </div>
     </div>
   );

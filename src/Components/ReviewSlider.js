@@ -2,12 +2,22 @@
 
 import { useRef, useEffect, useState, useLayoutEffect } from "react";
 import Card from "./Card.js";
-import { reviews } from "../Assets/DogReviews/reviewIndex.js";
+import { all_reviews } from "../Assets/DogReviews/reviewIndex.js";
 
 export default function ReviewSlider(props) {
   const ref = useRef(null);
   const [containerWidth, setWidth] = useState(100 + "%");
   const [animationState, setPlay] = useState("paused");
+
+  //filtering review list based on isRight
+  const half = Math.ceil(all_reviews.length / 2);
+  let reviews;
+  if (props.isRight) {
+    reviews = all_reviews.slice(0, half);
+  } else {
+    reviews = all_reviews.slice(half);
+  }
+
   useEffect(() => {
     if (ref.current) {
       setWidth(ref.current.scrollWidth + "px");
@@ -37,6 +47,10 @@ export default function ReviewSlider(props) {
           animationPlayState: animationState,
         }}
       >
+        {renderCards}
+        {renderCards}
+        {renderCards}
+        {renderCards}
         {renderCards}
         {renderCards}
         {renderCards}

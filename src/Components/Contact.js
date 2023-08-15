@@ -50,7 +50,6 @@ export default function Contact() {
         >
           <li>2 Visit Pet Sit: $60/day</li>
           <li>Overnight: $75/day</li>
-          <li>Private Boarding: $70/day</li>
           <li>Transportation: $150 in area</li>
         </ul>
         <p
