@@ -76,7 +76,7 @@
 .sidebar {
   position: absolute;
   margin-top: 0px;
-  top: -20px;
+  top: -28px;
   translate: -30px;
   border-bottom-left-radius: 30px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -90,12 +90,11 @@
 
 .hamburger-menu:has(input:checked) + .sidebar {
   /* translate: -800px; */
-  translate: calc(-100vw + 90px);
-  border-bottom-left-radius: 100px;
+  translate: calc(-735px);
   border-bottom-right-radius: 100px;
   height: 2000px;
   /* width: 900px; */
-  width: 100vw;
+  width: 810px;
   background-color: #8c7cdc;
 }
 
@@ -111,6 +110,7 @@
 }
 
 .menuItem {
+  translate: 30px;
   padding: 20px;
   color: #edecff;
   cursor: pointer;
