@@ -17,7 +17,7 @@ let all_reviews = [
   { img: img1298, name: "Anora", review: null },
   { img: img1495, name: "Ripley & Newt", review: null },
   { img: img1549, name: "Hicks", review: null },
-  { img: img2894, name: "Jasmine", review: null },
+  { img: img2894, name: "Jasmine", review: "test" },
   { img: img2897, name: "Jackson", review: null },
   {
     img: img5208,
