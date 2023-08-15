@@ -72,6 +72,14 @@ function Hamburger() {
     }, 500);
   };
 
+  const scrollUpHandler = () => {
+    setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+      });
+    }, 100);
+  };
+
   return (
     <>
       <label class="hamburger-menu">
@@ -93,6 +101,7 @@ function Hamburger() {
             onClick={() => {
               navigate("/services");
               unCheck();
+              scrollUpHandler();
             }}
           >
             Prices and Services
@@ -103,10 +112,6 @@ function Hamburger() {
               navigate("/");
               unCheck();
               scrollDownHandler();
-              // window.scrollTo({
-              //   top: document.documentElement.scrollHeight,
-              //   behavior: "smooth",
-              // });
             }}
           >
             Contact
