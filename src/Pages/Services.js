@@ -5,6 +5,8 @@ import React from "react";
 import SilverGoldImg from "../Components/SilverGoldImg.js";
 import kacyProfile from "../Assets/kacyProfile.jpeg";
 import spaDay from "../Assets/wigglySpa_ds.jpg";
+import petVisit from "../Assets/averyVisit.jpg";
+import kacyKennel from "../Assets/kacyKennel.jpg";
 
 /////////////////////////////////////////
 //pet visit
@@ -25,10 +27,10 @@ let pv_silver = (
       <li>Pictures and Updates</li>
       <li>Treats</li>
       <br />
-      $45 per/day, one visit per day
+      $35/day, one visit per day
       <br />
       <br />
-      $60/day, two visits per day
+      $55/day, two visits per day
     </ul>
   </p>
 );
@@ -51,12 +53,14 @@ let pv_gold = (
       <li>Pictures and Video</li>
       <li>Detailed Update</li>
       <br />
-      Upgrade to gold for $5/visit
+      Upgrade to gold for an additional $5/visit
     </ul>
   </p>
 );
 let pv_description = (
-  <p>Make sure your furry friend is safe with regular check-ins</p>
+  <p>
+    Make sure your furry friend is safe and cared for with regular check-ins
+  </p>
 );
 
 /////////////////////////////////////////
@@ -104,7 +108,7 @@ let os_gold = (
       <li>Pictures and Video</li>
       <li>Detailed Update</li>
       <br />
-      Upgrade to gold for $10/day
+      Upgrade to gold for an additional $10/day
     </ul>
   </p>
 );
@@ -146,10 +150,12 @@ let vsp_gold = (
       <li>A trip to a local dog park before cleaning</li>
       <li>A 2 week supply of home made skin and coat treats</li>
       <br />
-      Upgrade to gold for $30
+      Upgrade to gold for an additional $30
     </ul>
   </p>
 );
+
+let vsp_description = <p>Luxury treatment for your precious pup!</p>;
 /////////////////////////////////////////
 //Page Definition
 /////////////////////////////////////////
@@ -157,23 +163,27 @@ export default function Services() {
   return (
     <div>
       <DogTitle />
+      <p style={{ padding: "20px" }}>
+        Additional fees may apply based on number of pets or specialty
+        conditions
+      </p>
       <SilverGoldImg
         serviceName="Pet Visits"
         description={pv_description}
         silverInfo={pv_silver}
         goldInfo={pv_gold}
-        image={kacyProfile}
+        image={petVisit}
       />
       <SilverGoldImg
         serviceName="Overnight Sitting"
         description={os_description}
         silverInfo={os_silver}
         goldInfo={os_gold}
-        image={kacyProfile}
+        image={kacyKennel}
       />
       <SilverGoldImg
-        serviceName="Vallet Spa Day"
-        description={os_description}
+        serviceName="Valet Spa Day"
+        description={vsp_description}
         silverInfo={vsp_silver}
         goldInfo={vsp_gold}
         image={spaDay}

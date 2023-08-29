@@ -15,7 +15,7 @@ export default function HomePage() {
     <div>
       <DogTitle />
       <p style={{ padding: "20px" }}>
-        Proudly Serving the Austin - Round Rock - Phflugerville Area
+        Proudly Serving the Austin - Round Rock - Pflugerville Area
       </p>
       <ReviewSlider />
       <ReviewSlider isRight={true} />

@@ -12,19 +12,37 @@ let all_reviews = [
     img: img0945,
     name: "Avery",
     review:
-      "This is a somewhat long review, probably about as long as a review is likely to be! - reviewer",
+      '"Wonderful pet sitter. Took great care of my large, energetic, shepherd/lab mix. Great communication."',
   },
-  { img: img1298, name: "Anora", review: null },
-  { img: img1495, name: "Ripley & Newt", review: null },
-  { img: img1549, name: "Hicks", review: null },
-  { img: img2894, name: "Jasmine", review: "test" },
+  {
+    img: img1298,
+    name: "Anora",
+    review: '"Thank you for taking care of our girls!" ',
+  },
+  {
+    img: img1495,
+    name: "Ripley & Newt",
+    review: '"Reliable and extremely flexible" ',
+  },
+  {
+    img: img1549,
+    name: "Hicks",
+    review:
+      '"Took excellent care of my dogs and cat for over a year, offered advice when we decided to get a puppy!"',
+  },
+  { img: img2894, name: "Jasmine", review: null },
   { img: img2897, name: "Jackson", review: null },
   {
     img: img5208,
     name: "Wicket",
-    review: "This is a short review for a tiny girl!",
+    review: '"Worked on basic training while caring for my puppy"',
   },
-  { img: img9683, name: "Shadow", review: null },
+  {
+    img: img9683,
+    name: "Shadow",
+    review:
+      '"Thank you for being so awesome with Shadow and taking such great care of him!"',
+  },
 ];
 
 export { all_reviews };

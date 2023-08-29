@@ -3,6 +3,14 @@ import { useNavigate } from "react-router-dom";
 export default function ServicePriceButton() {
   const navigate = useNavigate();
 
+  const scrollUpHandler = () => {
+    setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+      });
+    }, 100);
+  };
+
   return (
     <div style={{ position: "relative" }}>
       <svg
@@ -13,6 +21,7 @@ export default function ServicePriceButton() {
         xmlns="http://www.w3.org/2000/svg"
         onClick={() => {
           navigate("/services");
+          scrollUpHandler();
         }}
         style={{ cursor: "pointer" }}
       >
