@@ -9,7 +9,7 @@ export default function MadeByDaniel() {
       }}
     >
       <p>Made with ❤️ by Daniel Warfield</p>
-      <p style={{ fontSize: "10px" }}>Custom web offerings coming soon!</p>
+      {/* <p style={{ fontSize: "10px" }}>Custom web offerings coming soon!</p> */}
     </div>
   );
 }
