@@ -36,7 +36,7 @@ export default function Contact() {
             Serving the Austin, Round Rock, and Pflugerville Areas
           </p>
           <p style={{ fontSize: "25px", padding: "20px" }}>
-            📞 512-931-4584 📞
+            Text: 512-931-4584
           </p>
           <p style={{ textAlign: "left" }}>Base Rates on Popular Services:</p>
         </div>
