@@ -35,7 +35,9 @@ export default function Contact() {
             <br />
             Serving the Austin, Round Rock, and Pflugerville Areas
           </p>
-          <p style={{ fontSize: "25px", padding: "20px" }}>xxx-xxx-xxxx</p>
+          <p style={{ fontSize: "25px", padding: "20px" }}>
+            📞 512-931-4584 📞
+          </p>
           <p style={{ textAlign: "left" }}>Base Rates on Popular Services:</p>
         </div>
         <ul
@@ -48,7 +50,7 @@ export default function Contact() {
             paddingBottom: "5px",
           }}
         >
-          <li>2 Visit Pet Sit: $60/day</li>
+          <li>2 Visit Pet Sit: $55/day</li>
           <li>Overnight: $75/day</li>
           <li>Transportation: $150 in area</li>
         </ul>
